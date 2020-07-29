@@ -1,1 +1,1 @@
-# lighthouse-gcp-bigquery
+# lighthouse-gcp-bigquery-plugin
