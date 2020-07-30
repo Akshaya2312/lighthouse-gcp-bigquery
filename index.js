@@ -13,15 +13,9 @@ module.exports = {
   processMessage(message, queue) {
     const log = this.log;
     switch(message.type) {
-        case 'lighthouse.audit': {
+        case 'lighthouse.pageSummary': {
             fs.writeFileSync("lighthouse.audit.json", JSON.stringify(message)); 
             log.info('lighthouse.audit captured');
-            break;
-        }
-
-        case 'lighthouse.report': {
-            fs.writeFileSync("lighthouse.report.json", JSON.stringify(message)); 
-            log.info('lighthouse.report captured');
             break;
         }
     }
