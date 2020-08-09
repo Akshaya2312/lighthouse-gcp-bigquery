@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Akshaya2312/lighthouse-gcp-bigquery#readme",
   "dependencies": {
+    "@google-cloud/storage": "^5.1.2",
     "json-2-csv": "^3.7.6"
   }
 }

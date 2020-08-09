@@ -1,11 +1,10 @@
-lighthouse.audit.json
-lighthouse.audit.csv
-lighthouse.report.json
-lighthouse.pagesummary.json
-lighthouse.pagesummary.csv
+pagesummary.json
+pagesummary.csv
 config.json
 
 sitespeed-result
 lighthouse-gcp-bigquery
 
 node_modules
+devops_service*
+pageSummary_*
