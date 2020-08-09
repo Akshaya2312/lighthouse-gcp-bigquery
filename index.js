@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const converter = require('json-2-csv');
 
 module.exports = {
   concurrency: 1,
@@ -14,15 +15,17 @@ module.exports = {
     const log = this.log;
     switch(message.type) {
         case 'lighthouse.pageSummary': {
-            fs.writeFileSync("lighthouse.audit.json", JSON.stringify(message)); 
-            log.info('lighthouse.audit captured');
-            break;
+          converter.json2csvAsync(message).then(csv => {
+            fs.writeFileSync('lighthouse.pageSummary.csv', csv);
+            log.info('lighthouse.pagesummary.csv captured');
+          }).catch(err => {
+            log.error('lighthouse.pagesummary.csv not captured', err)
+          });
+          break;
         }
     }
   },
   close(options, errors) {
-    // When all URLs are finished all plugins close function is called once.
-    // Options are the configuration options and errors a array of errors
-    // from the run.
+    fs.unlinkSync('lighthouse.pageSummary.csv');
   }
 };
