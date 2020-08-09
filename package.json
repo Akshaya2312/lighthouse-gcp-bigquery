@@ -1,0 +1,23 @@
+{
+  "name": "lighthouse-gcp-bigquery",
+  "version": "1.0.0",
+  "description": "sitespeed plugin to export lighthouse audit report as csv and push to gcp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshaya2312/lighthouse-gcp-bigquery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akshaya2312/lighthouse-gcp-bigquery/issues"
+  },
+  "homepage": "https://github.com/Akshaya2312/lighthouse-gcp-bigquery#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^5.1.2",
+    "json-2-csv": "^3.7.6"
+  }
+}

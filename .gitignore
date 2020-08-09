@@ -1,0 +1,10 @@
+pagesummary.json
+pagesummary.csv
+config.json
+
+sitespeed-result
+lighthouse-gcp-bigquery
+
+node_modules
+devops_service*
+pageSummary_*
