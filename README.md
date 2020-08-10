@@ -1,4 +1,4 @@
-# lighthouse-gcp-bigquery-plugin
+# lighthouse-gcp-bigquery-plugin for sitespeed.io
 
 ## To use this plugin run following command from the root of the project
 
