@@ -1,0 +1,4 @@
+FROM sitespeedio/sitespeed.io:12.11.0-plus1
+
+ADD ./index.js /sitespeed.io/lighthouse-gcp-bigquery
+ADD package.json /sitespeed.io/lighthouse-gcp-bigquery
