@@ -1,4 +1,4 @@
-FROM sitespeedio/sitespeed.io:12.11.0-plus1
+FROM sitespeedio/sitespeed.io:14.3.0-plus1
 
 ENV SITESPEED_IO_PLUGINS__ADD /lighthouse-gcp-bigquery
 
